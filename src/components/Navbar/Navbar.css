@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@300;400;600&display=swap');
+
+body, html {
+    pad: 0;
+    margin: 0;
+    background-color: black;
+}
+
+.navigation {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    line-height: 100%;
+    z-index: 1;
+}
+
+.nav-list-item {
+    position: relative;
+    margin: 50px 100px;
+    list-style: none;
+    color: white;
+    font-weight: 600;
+    font-family: 'Teko', sans-serif;
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+}
+
+.dev {
+    font-size: 14px;
+    font-family: 'Teko', sans-serif;
+    letter-spacing: 2px;
+    font-weight: 400;
+    color: rgb(255, 0, 123);
+}
+
+.blinkingCircle{
+    position: absolute;
+    top: 7px;
+    left: -10px;
+    content: '';
+    border-radius: 50%;
+    height: 5px;
+    width: 5px;
+    background-color: transparent;
+    animation: blink 0.5s ease-in-out infinite;
+    transition: 0.3s ease-in-out;
+}
+
+.about-me .blinkingCircle{
+    left: 0px;
+}
+
+@keyframes blink {
+    0%,100%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+}
+.nav-list-item:hover .blinkingCircle{
+    background-color: white;
+}

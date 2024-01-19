@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@100;500&display=swap');
+
+* {
+    margin: 0;
+    pad: 0;
+    color: white;
+}
+
+.service-container {
+    position: absolute;
+    left: 50%;
+    transform: translateX( -50%);
+    display: flex;
+    height: 100vh;
+    width: 90vw;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.service-item {
+    cursor: default;
+    height: 50%;
+    padding: 20px;
+    border-radius: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);   
+    justify-content: start;
+    text-align: center;
+    width: 28%;
+    backdrop-filter: blur(10px) brightness(0.8);
+    transition: 0.3s ease-in-out;
+}
+
+.service-item:hover {
+    background: rgba(255, 255, 255, 0.7);
+    transform: translate(0px, -15px);
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);      
+}
+
+.service-item:hover .service-item-text{
+    color: black;
+}
+.service-item-title {
+    font-size: 5rem;
+    margin: 50px 0px;
+    font-family: 'Bebas Neue', sans-serif;
+    color: rgb(255, 0, 123);
+}
+
+.service-item-text{
+    color: white;
+    font-size: 2rem;
+    font-weight: 500;
+    font-family: 'Urbanist', sans-serif;
+}
+
+.projects-container {
+    position: absolute;
+    font-family: 'Urbanist', sans-serif;
+    bottom: 0;
+    color: white;
+    margin-bottom: 80px;
+    font-size: 3rem;
+    width: 100vw;
+    z-index: 100;
+   display: flex;
+   justify-content: center;
+}

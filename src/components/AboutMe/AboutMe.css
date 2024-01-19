@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@300&display=swap');
+
+.about-me-title{
+    color: rgb(255, 0, 93);
+    font-family: 'Urbanist', sans-serif;
+    font-size: 100px;
+    margin: 0;
+    margin-left: 5%;
+    z-index: 2;
+}
+
+.about-me-avatar{
+    background-image: url('../../assets/avatar.jpeg');
+    height: 80%;
+    width: 32%;
+    top: 10%;
+    right: 10%;
+    transform: scale(0.9);
+    border-radius: 10%;
+    background-color: blue;
+    position: absolute;
+}
+.about-me-page{
+    position: absolute;
+    color: white;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.about-me-text{
+    margin-left: 5%;
+    font-size: 25px;
+    width: 50%;
+    z-index: 1;
+    font-family: 'IBM Plex Mono', monospace;
+}
+
+.about-me-links-1 a{
+    color: white;
+    text-decoration: none;
+    overflow: hidden;
+}
+
+.about-me-links-2 a{
+    color: white;
+    text-decoration: none;
+    overflow: hidden;
+}
+
+.about-me-links-1{
+    overflow: hidden;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 30px;
+    letter-spacing: 10px;
+    text-decoration: none;
+    position: absolute;
+    bottom: 5%;
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+    animation: marquee1 10s linear infinite;
+}
+
+.about-me-links-2 a{
+    color: white;
+    text-decoration: none;
+}
+
+.about-me-links-2{
+    overflow: hidden;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 30px;
+    letter-spacing: 10px;
+    text-decoration: none;
+    position: absolute;
+    bottom: 5%;
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+    animation: marquee2 10s linear infinite;
+}
+
+
+@keyframes marquee1 {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+    
+}
+
+@keyframes marquee2 {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(0%);
+    }
+    
+}

@@ -1,0 +1,4 @@
+# 1 Use GSAP for loading animations
+# 2 Create an inbetween page loader
+# 3 Try making an about me similar to this: https://in.pinterest.com/pin/787426316110996763/
+# 4 Here is another idea: https://in.pinterest.com/pin/16395986136471637/
